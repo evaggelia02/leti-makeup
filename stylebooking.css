@@ -1,0 +1,164 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top{
+    text-align: center;
+}
+#logo {
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(160, 132, 187);
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 16px;
+}
+
+#logo-name{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px;
+    }
+
+#navigation a {
+    color: grey;
+    padding: 8px;
+    text-decoration: none;
+}
+#navigation a:hover {
+    color: rgb(160, 132, 187);
+}
+
+
+#image img {
+        max-width: 80%;
+        margin-top: 30px;
+        margin-bottom: 16px;
+}
+
+
+#main {
+    max-width: 800px;
+    margin: auto;
+    padding: 16px;
+}
+
+#footer {
+    text-align: center;
+    color: grey;
+
+}
+
+section {
+    height: 60vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container {
+
+    width: 90%;
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+box-shadow: 0px 0px 20px black;
+background-color: white;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+
+.form-group {
+
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(172, 169, 169);
+    margin-top: 5px;
+}
+
+textarea {
+
+resize: vertical;
+}
+
+button[type="submit"]  {
+    width: 100px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(160, 132, 187);
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+
+}
+
+button[type="submit"]:hover {
+
+    background-color: rgb(232, 224, 240);
+}
+
+#status{
+
+    width: 90px;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+
+    background-color: rgb(83, 180, 83);
+    animation: status 4s ease forwards;
+
+
+}
+  
+#status.error{
+
+    background-color: rgb(228, 176, 176);
+    color: white;
+}
+
+@keyframes status {
+
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
